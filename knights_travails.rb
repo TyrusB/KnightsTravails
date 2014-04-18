@@ -1,7 +1,10 @@
 load "./treenode.rb"
 require "Set"
+
 class KnightPathFinder
+
   attr_reader :board, :root
+  
   def initialize(start_pos, x_dim = 8, y_dim = 8)
     @board = build_board(x_dim,y_dim)
     @root = find_start(start_pos)
